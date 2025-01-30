@@ -54,7 +54,8 @@ public class ExplorecaliJpaApplication implements CommandLineRunner {
 	}
 
 	private void createToursFromFile(String fileToImport) throws IOException {
-        TourFromFile.read(fileToImport).forEach(t -> tourService.createTour(
+        TourFromFile.read(fileToImport).forEach(t -> 
+			tourService.createTour(
                 t.packageName(),
                 t.title(),
                 t.description(),
