@@ -128,6 +128,15 @@ Merge the feature branch:
 git merge --no-ff feature-MVC
 ```
 
+Alternative: Using the -m Option
+If you prefer to avoid the interactive editor, you can provide a commit message directly in the merge command. For example:
+
+```bash
+git merge --no-ff feature-MVC -m "add message. :)"
+```
+
+This command creates the merge commit with your specified message without opening the text editor.
+
 #### 5. Push the Updated `main` Branch:
 
 ```bash
