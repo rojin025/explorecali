@@ -20,6 +20,17 @@ Uploads your branch to the remote repository and sets it for future updates.
 git push -u origin feature-MVC
 ```
 
+### Alternative: Using the -m Option
+
+If you prefer to avoid the interactive editor, you can provide a commit message directly in the merge command. For example:
+
+```bash
+git merge --no-ff feature-MVC -m "Merge feature-MVC: Updated README and added documentation"
+
+```
+
+This command creates the merge commit with your specified message without opening the text editor.
+
 ## 3. Merging Strategies
 
 ### Fast-Forward Merge
