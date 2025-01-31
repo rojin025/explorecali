@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GcdService",
+      "request": "launch",
+      "mainClass": "com.example.explorecalijpa.business.GcdService",
+      "projectName": "explorecali-jpa"
+    },
+    {
+      "type": "java",
       "name": "ExplorecaliJpaApplication",
       "request": "launch",
       "mainClass": "com.example.explorecalijpa.ExplorecaliJpaApplication",
