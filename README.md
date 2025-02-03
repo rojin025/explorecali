@@ -2,6 +2,16 @@
 
 Explore California Relational Database Microservice
 
+The Explore California app is a travel booking platform that helps users discover and book exciting tours across California. It provides a smooth and secure experience, allowing travelers to explore destinations, view tour details, and make reservations with ease. The app ensures fast performance, reliable booking management, and secure user authentication, making trip planning effortless and enjoyable.
+
+Reengineered the backend for Explore California using Spring Boot microservices, decomposing the monolithic structure into scalable, maintainable services, improving performance and flexibility.
+Designed and implemented RESTful APIs with Spring MVC, ensuring efficient request handling, proper resource mapping, and adherence to REST principles.
+Optimized database interactions using Spring Data JPA, implementing custom queries, pagination, and caching to enhance data retrieval speed and reduce database load.
+Integrated SwaggerUI for API documentation and testing, enabling seamless collaboration, debugging, and validation of API endpoints.
+Implemented API gateway routing using Spring Cloud Gateway, ensuring efficient request distribution and service discovery.
+Enhanced security with Spring Security, implementing JWT-based authentication and role-based access control (RBAC) for a secure user experience.
+Ensured resilience by integrating Resilience4j's circuit breaker pattern, preventing system failures from dependent service downtimes.
+
 # Git Branching and Feature Management Documentation
 
 This document provides a comprehensive reference for managing Git branches, implementing features (such as an MVC feature), and maintaining an organized repository. It covers branch creation, merging strategies, branch naming conventions, enterprise workflows, and usage in environments like GitHub Codespaces.
