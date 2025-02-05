@@ -1,6 +1,5 @@
 package com.example.explorecalijpa;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +27,7 @@ public class ExplorecaliJpaApplication implements CommandLineRunner {
     private final String TOUR_IMPORT_FILE = "ExploreCalifornia.json";
 
     @Bean
-    public OpenAPI swaggerHeader() {
+    public OpenAPI customOpenAPI() {
         return new OpenAPI()
             .info((new Info())
             .description("Services for the Explore California Relational Database.")
