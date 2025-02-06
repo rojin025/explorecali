@@ -39,8 +39,9 @@ public class Tour {
     @Column
     @Enumerated(EnumType.STRING)
     private Difficulty difficulty;
-
-    @Column
+    
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     private Region region;
 
     public Tour(String title, 
@@ -53,6 +54,11 @@ public class Tour {
                 TourPackage tourPackage, 
                 Difficulty difficulty, 
                 Region region) {
+
+                    if (region == null) {
+                        throw new IllegalArgumentException("Region cannot be null");
+                    }
+                    
         this.title = title;
         this.description = description;
         this.blurb = blurb;
